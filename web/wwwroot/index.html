@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flag Checker?????????</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  <h1>Bienvenido a mi flag checker</h1>
+  <br><br>
+  <div class="formulario">
+    <label>Ingrese Flag</label>
+    <br><br>
+    <input id="flag">
+    <br><br>
+    <button id="btnFormulario">Aceptar</button>
+  </div>
+  <div class="divResultado">
+    <label id="resultado"></label>
+  </div>
+  <script>
+    document.getElementById("btnFormulario").addEventListener("click",()=>{
+      const flag=document.getElementById("flag").value;
+      const resultado=new FormData();
+      resultado.append("flag",flag);
+      fetch("/validar",{
+        method:"POST",
+        body:resultado
+      }).then(r=>r.text()).then(texto=>{
+          if(texto=="Correct"){
+            document.getElementById("resultado").innerHTML="<label style='color:green'>Correct</label>";
+          }else{
+            document.getElementById("resultado").innerHTML="<label style='color:red'>Incorrect</label>";
+          }
+        });
+    });
+    </script>
+  </body>
+</html>

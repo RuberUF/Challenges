@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "7iHBPkyjE9k=",
+  "success": true,
+  "projectFilePath": "/home/oinodecam/Downloads/NET/NET/Challenges/web/web.csproj",
+  "expectedPackageFiles": [
+    "/home/oinodecam/.nuget/packages/microsoft.netcore.app.ref/10.0.10/microsoft.netcore.app.ref.10.0.10.nupkg.sha512",
+    "/home/oinodecam/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.10/microsoft.aspnetcore.app.ref.10.0.10.nupkg.sha512",
+    "/home/oinodecam/.nuget/packages/microsoft.netcore.app.host.linux-x64/10.0.10/microsoft.netcore.app.host.linux-x64.10.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
