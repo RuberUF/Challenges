@@ -4,6 +4,75 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="ChallShop.MainWindow"
-        Title="ChallShop">
-    Welcome to Avalonia!
+        Title="Tienda de Compras CybersecUnasam"
+        Icon="avares://ChallShop/Assets/icon.png"
+        Foreground="Black"
+        CanResize="False"
+        WindowState="Maximized">
+        <Window.Background>
+          <ImageBrush Source="avares://ChallShop/Assets/imagen.jpg"/>
+        </Window.Background>
+        <StackPanel>
+          <Border HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Black" BorderThickness="2" Padding="20">
+            <StackPanel Width="500" Height="50">
+              <TextBlock Text="Tienda de CybersecUnasam :)" FontSize="32" FontWeight="Bold"/>
+            </StackPanel>
+          </Border>
+          <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0, 10, 30, 10">
+            <TextBlock Text="Saldo" x:Name="Saldo" Foreground="Blue" FontSize="30" FontWeight="Bold"/>
+          </StackPanel>
+          <Border BorderBrush="Black" BorderThickness="2" Padding="40" Background="Gray" Opacity="0.7">
+            <Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*,*" VerticalAlignment="Center" HorizontalAlignment="Center" Width="700">
+              <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Margin="10" Padding="10">
+                <StackPanel>
+                  <Image Source="avares://ChallShop/Assets/imagen2.jpg" Width="150" Height="80"/>
+                  <TextBlock Text="" x:Name="Producto1"/>
+                  <TextBlock Text="" x:Name="Precio1"/>
+                  <Button Content="Comprar" x:Name="btn1" Background="Black" Click="Comprar"/>
+                </StackPanel>
+              </Border>
+              <Border Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Margin="10" Padding="10">
+                <StackPanel>
+                  <Image Source="avares://ChallShop/Assets/imagen2.jpg" Width="150" Height="80"/>
+                  <TextBlock Text="" x:Name="Producto2"/>
+                  <TextBlock Text="" x:Name="Precio2"/>
+                  <Button Content="Comprar" x:Name="btn2" Background="Black" Click="Comprar"/>
+                </StackPanel>
+              </Border>
+              <Border Grid.Row="0" Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="10" Padding="10">
+                <StackPanel>
+                  <Image Source="avares://ChallShop/Assets/imagen2.jpg" Width="150" Height="80"/>
+                  <TextBlock Text="" x:Name="Producto3"/>
+                  <TextBlock Text="" x:Name="Precio3"/>
+                  <Button Content="Comprar" x:Name="btn3" Background="Black" Click="Comprar"/>
+                </StackPanel>
+              </Border>
+
+              <Border Grid.Row="1" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Margin="10" Padding="10">
+                <StackPanel>
+                  <Image Source="avares://ChallShop/Assets/imagen2.jpg" Width="150" Height="80"/>
+                  <TextBlock Text="" x:Name="Producto4"/>
+                  <TextBlock Text="" x:Name="Precio4"/>
+                  <Button Content="Comprar" x:Name="btn4" Background="Black" Click="Comprar"/>
+                </StackPanel>
+              </Border>
+              <Border Grid.Row="1" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Margin="10" Padding="10">
+                <StackPanel>
+                  <Image Source="avares://ChallShop/Assets/imagen2.jpg" Width="150" Height="80"/>
+                  <TextBlock Text="" x:Name="Producto5"/>
+                  <TextBlock Text="" x:Name="Precio5"/>
+                  <Button Content="Comprar" x:Name="btn5" Background="Black" Click="Comprar"/>
+                </StackPanel>
+              </Border>
+              <Border Grid.Row="1" Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="10" Padding="10">
+                <StackPanel>
+                  <Image Source="avares://ChallShop/Assets/imagen2.jpg" Width="150" Height="80"/>
+                  <TextBlock Text="" x:Name="Producto6"/>
+                  <TextBlock Text="" x:Name="Precio6"/>
+                  <Button Content="Comprar" x:Name="btn6" Background="Black" Click="Comprar"/>
+                </StackPanel>
+              </Border>
+            </Grid>
+          </Border>
+        </StackPanel>
 </Window>
